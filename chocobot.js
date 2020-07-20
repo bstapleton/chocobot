@@ -13,7 +13,7 @@ const maximumAmountOfDice = 20;
 client.login(auth.discord.token);
 
 client.once('ready', () => {
-	console.log('Ready!');
+    console.log('Ready!');
 });
 
 client.on('message', message => {

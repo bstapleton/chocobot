@@ -40,4 +40,4 @@ You'll need to generate a token from the Discord development site. You're not ha
 }
 ```
 
-The `auth.json` file is excluded from the repo, so you don't go accidentally exposing your token/s to the world. Please remember yo keep your secrets secret :wink: 
+The `auth.json` file is excluded from the repo, so you don't go accidentally exposing your token/s to the world. Please remember to keep your secrets secret :wink: 
