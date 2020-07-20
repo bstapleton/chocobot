@@ -1,0 +1,23 @@
+{
+    "name": "chocobot",
+    "version": "0.0.1",
+    "description": "A contraction of Chocobo + Bot = Chocobot. It rolls dice n stuff.",
+    "author": "Ben Stapleton",
+    "dependencies": {
+        "axios": "*",
+        "discord.js": "^12.2.0",
+        "sqlite": "^4.0.11",
+        "sqlite3": "^5.0.0"
+    },
+    "main": "chocobot.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node chocobot.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.6",
+        "@babel/node": "^7.8.7",
+        "@babel/preset-env": "^7.9.6",
+        "nodemon": "^2.0.4"
+    }
+}
