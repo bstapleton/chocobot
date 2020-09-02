@@ -4,7 +4,7 @@ I started this just to play around with some of Discord's API things. It's a cha
 
 Unlike some(?) dice rollers, this hooks into the random.org API in order to get some more true-randomness to the results.
 
-Feel free to fork it and adapt to your needs. Its very WIP right now, and I don't get a lot of time to work on it extensively.
+Feel free to fork it and adapt to your needs. Its very WIP right now, and I don't get a lot of time to work on it extensively. Its basically one of my Sunday projects, on the off-chance that I don't have more pressing things to worry about.
 
 It should be noted also that there are much more comprehensive dice rolling bots available for Discord, and you'll likely have a better time with those!
 
@@ -39,5 +39,6 @@ You'll need to generate a token from the Discord development site. You're not ha
     }
 }
 ```
+Caveat: you can probably avoid the whole database block of the auth for now, since I haven't set up the SQLite side of things (yet).
 
 The `auth.json` file is excluded from the repo, so you don't go accidentally exposing your token/s to the world. Please remember to keep your secrets secret :wink: 
