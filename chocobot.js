@@ -20,7 +20,7 @@ client.on('message', message => {
     var content = message.content;
 
     // Listen for commands, '!'
-    if (content.substring(0, 1) == '!') {
+    if (content.substring(0, 1) === '!') {
         let command = content.substring(1).split(' '); // The command given, e.g. !roll 1d6
         let args = command[1]; // The arguments for the command, e.g. 1d6
 
@@ -69,9 +69,10 @@ client.on('message', message => {
                     break;
                 case 'rollstats':
                     return new Promise((resolve, reject) => {
-                        db.getStats()
+                        db.getDiceTotals(allowedDice)
                         .then((data) => {
-                            message.channel.send(data);
+                            console.log(data);
+                            // message.channel.send(`Total rolled dice: ${data.total}\n\nboop`);
                         }).catch(() => console.error(reject));
                     });
                     break;
